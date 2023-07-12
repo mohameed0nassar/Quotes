@@ -1,0 +1,23 @@
+a{
+    cursor: pointer;
+}
+.animation{
+    animation-name: check;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes check {
+    0%{transform: translateY(0px);}
+    10%{transform: translateY(2px);}
+    20%{transform: translateY(4px);}
+    30%{transform: translateY(6px);}
+    40%{transform: translateY(8px);}
+    50%{transform: translateY(10px);}
+
+}
+body{
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    
+}
