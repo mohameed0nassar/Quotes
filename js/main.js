@@ -13,9 +13,9 @@ function printResult(){
         var num=Math.floor(Math.random()*qut.length)
     }
     myCard.innerHTML = `
-    <div class="row g-0">
+    <div class="row g-0 overflow-hidden">
         <div class="col-md-4 col-12">
-        <img src="imgs/q(${num}).jpg" class="img-fluid rounded w-100 h-100" alt="${qut[num][1]}">
+        <img src="imgs/q(${num}).jpg" class="img-fluid w-100 h-100" alt="${qut[num][1]}">
         </div>
         <div class="col-md-8 col-12 min-height">
         <div class="card-body d-flex flex-column justify-content-between h-100">
