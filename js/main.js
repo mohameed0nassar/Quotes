@@ -1,8 +1,4 @@
-//frank zappa
-//mae west
-//Mahatma Gandhi
-//Oscar Wilde
-//Marcus Tullius Cicero
+
 var qut=[
     ["“So many books, so little time.”","--Frank Zappa"],
     ["“You only live once, but if you do it right, once is enough.”","--Mae West"],
@@ -10,16 +6,24 @@ var qut=[
     ["“Always forgive your enemies; nothing annoys them so much.”","--Oscar Wilde"],
     ["“A room without books is like a body without a soul.”","--Marcus Tullius Cicero"]]
 var temp = -1;
+var myCard =document.getElementById('result');
 function printResult(){
     var num=Math.floor(Math.random()*qut.length)
     while (temp == num) {
         var num=Math.floor(Math.random()*qut.length)
     }
-    document.getElementById('result').innerHTML = `
-    <img src="./imgs/q(${num}).jpg" class="w-100" alt="">
-    <div class="card-body">
-        <p>${qut[num][0]}</p>
-        <span >${qut[num][1]}</span>
-    </div>`;
+    myCard.innerHTML = `
+    <div class="row g-0">
+        <div class="col-md-4 col-12">
+        <img src="imgs/q(${num}).jpg" class="img-fluid rounded w-100 h-100" alt="${qut[num][1]}">
+        </div>
+        <div class="col-md-8 col-12">
+        <div class="card-body d-flex flex-column justify-content-between h-100">
+            <p class="card-text">${qut[num][0]}</p>
+            <h6 class="card-title text-end">${qut[num][1]}</h6>
+            </div>
+        </div>
+    </div>
+    `;
     temp=num;
 }
