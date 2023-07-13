@@ -13,7 +13,7 @@ function printResult(){
         var num=Math.floor(Math.random()*qut.length)
     }
     myCard.innerHTML = `
-    <div class="row g-0 overflow-hidden">
+    <div class="row g-0 >
         <div class="col-md-4 col-12">
         <img src="imgs/q(${num}).jpg" class="img-fluid w-100 h-100" alt="${qut[num][1]}">
         </div>
