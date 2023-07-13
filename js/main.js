@@ -17,7 +17,7 @@ function printResult(){
         <div class="col-md-4 col-12">
         <img src="imgs/q(${num}).jpg" class="img-fluid rounded w-100 h-100" alt="${qut[num][1]}">
         </div>
-        <div class="col-md-8 col-12">
+        <div class="col-md-8 col-12 min-height">
         <div class="card-body d-flex flex-column justify-content-between h-100">
             <p class="card-text">${qut[num][0]}</p>
             <h6 class="card-title text-end">${qut[num][1]}</h6>
